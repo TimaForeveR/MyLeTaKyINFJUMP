@@ -4,6 +4,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
  Icon = "rbxthumb://type=Asset&id=14435031323&w=150&h=150"})
 Duration = 10;
 
+local InfiniteJumpEnabled = true
 game:GetService("UserInputService"). JumpRequest:connect(function()
 if InfiniteJumpEnabled then game:GetService"Players".LocalPlayer. Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 end
